@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snapsite</title>
+    <link rel="icon" href="/Assets/Icons/snapsite-logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-5 md:p-10 text-gray-800 mb-10 select-none touch-pan-y">
+    <!-- hero -->
+    <section class=" rounded-2xl p-5 mb-5 shadow-2xl">
+        <div class="container mx-auto">
+            <div
+                class="flex flex-wrap justify-between items-center bg-gradient-to-b from-orange-100 via-orange-200 to-orange-100 py-5 px-5 rounded-lg">
+                <div class="flex items-center">
+                    <img src="Assets/Icons/snapsite-logo.png" class="w-10 h-9 " alt="logo">
+                    <a class="font-bold text-gray-700 text-3xl pr-5 border-r border-purple-300 mr-5 ml-1"
+                        href="/index.html">Snapsite</a>
+                </div>
+                <div class="my-auto">
+                    <button class="md:hidden" onclick="menuclick()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                        </svg>
+                    </button>
+                    <ul class="hidden md:flex font-bold text-gray-700">
+                        <li class="pr-5"><a class=" px-3 py-2 hover:border-purple-300 rounded"
+                                href="/index.html">Home</a></li>
+                        <li class="pr-5"><a class=" px-3 py-2 hover:border-purple-300 rounded"
+                                href="about/about.html">About</a>
+                        </li>
+                        <li class="pr-5"><a class=" px-3 py-2 hover:border-purple-300 rounded"
+                                href="/services/services.html">services</a></li>
+                        <li class="pr-5"><a class=" px-3 py-2 hover:border-purple-300 rounded"
+                                href="/contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <a href="quote/quote.html"
+                    class="text-medium bg-red-500 text-white px-3 py-2 rounded font-bold ml-auto flex animate-bounce">
+                    <span class="pr-1 hidden lg:block">
+                        Get a Quote
+                    </span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 3.75H6.912a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859M12 3v8.25m0 0-3-3m3 3 3-3" />
+                    </svg>
+                </a>
+                <div class="hidden transion-all duration-300 ease-in-out px-5 justify-center py-5" id="mobilemenu">
+                    <ul class=" font-bold text-gray-600  md:hidden">
+                        <li class="mt-1"><a class=" px-3" href="/index.html">Home</a></li>
+                        <li class="mt-1"><a class=" px-3" href="about/about.html">About</a></li>
+                        <li class="mt-1"><a class=" px-3" href="/services/services.html">services</a></li>
+                        <li class="mt-1"><a class=" px-3" href="contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex py-12 lg:py-36 mt-12 ">
+                <div
+                    class="lg:w-1/2 w-full justify-center bg-gradient-to-tr from-emerald-400 via-violet-600 to-cyan-400 bg-gradient-to-t from-slate-900 to-slate-700 bg-clip-text text-transparent ">
+                    <h2 class="text-center md:text-left text-3xl md:text-5xl md:fontsemibold font-bold">Build
+                        Websites Effortlessly</h2>
+                    <p class="mt-8 text-2xl text-gray-600 text-center md:text-left">Snapsite helps you create
+                        responsive,
+                        modern, and stunning landing pages with ease.</p>
+                    <p class="mt-8 text-2xl text-gray-800 text-center md:text-left">"Design Smart. Build Fast."</p>
+                </div>
+                <div class="w-1/2 hidden lg:flex ">
+                    <img class="rounded-3xl" src="assets/12212574_4880390.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features -->
+    <section class="bg-gradient-to-r from-indigo-400 to-cyan-400 rounded-2xl p-5 mb-5">
+        <div class="container mx-auto">
+            <div class="py-12 md:py-16 text-gray-600 text-center">
+                <h1 class="font-bold text-gray-800 text-3xl md:text-6xl">Features</h1>
+                <p class="font-semibold text-2xl mt-5">We provide powerful tools to help you build,
+                    customize, and launch your website effortlessly
+                </p>
+            </div>
+            <div class="flex flex-wrap w-full">
+                <div
+                    class="p-3 flex flex-col md:flex-row gap-6 items-center md:items-start bg-gradient-to-b from-zinc-100 via-slate-100 to-gray-100 rounded-2xl mb-5 w-full">
+                    <div
+                        class="p-1 flex flex-col items-center md:items-start w-full md:w-1/3 text-center md:text-left gap-4 px-24">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-16 h-16 text-emerald-500">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
+                        </svg>
+                        <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-3">Performance</h3>
+                    </div>
+                    <div class="w-full md:w-2/3 text-center md:text-left text-gray-700 px-10 lg:mt-8">
+                        <h2 class="font-semibold gap-2 text-xl md:text-2xl mb-2 mt-5">Blazing Fast Performance</h2>
+                        <p class="text-base md:text-lg ">Your website loads faster than ever, providing a
+                            smooth and seamless experience for your visitors
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="p-3 flex flex-col md:flex-row-reverse gap-6 items-center md:items-start bg-gradient-to-b from-zinc-100 via-slate-100 to-gray-100 rounded-2xl mb-5 w-full">
+                    <div
+                        class="p-1 flex flex-col items-center md:items-start w-full md:w-1/3 text-center md:text-left gap-4 px-24">
+                        <span class="items-center justify-center lg:ml-12">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-16 text-blue-500">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                            </svg>
+                        </span>
+
+                        <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-3">Responsive</h3>
+                    </div>
+
+                    <div class="w-full md:w-2/3 text-center md:text-left text-gray-700 px-10 lg:mt-8">
+                        <h2 class="font-semibold gap-2 text-xl md:text-2xl mb-2 mt-5">Mobile Friendly & Responsive</h2>
+                        <p class="text-base md:text-lg ">Looks stunning on all devices — from large desktop screens to
+                            small mobile phones
+                        </p>
+                    </div>
+
+
+                </div>
+                <div
+                    class="p-3 flex flex-col md:flex-row gap-6 items-center md:items-start bg-gradient-to-b from-zinc-100 via-slate-100 to-gray-100 rounded-2xl mb-5 w-full">
+                    <div
+                        class="p-1 flex flex-col items-center md:items-start w-full md:w-1/3 text-center md:text-left gap-4 px-24">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-12 text-red-900">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
+                        </svg>
+                        <h3 class="text-2xl md:text-3xl font-semibold text-gray-800">Easy Customization</h3>
+                    </div>
+                    <div class="w-full md:w-2/3 text-center md:text-left text-gray-700 px-10 lg:mt-5">
+                        <h2 class="font-semibold gap-2 text-xl md:text-2xl mb-2 mt-5">Fully Customizable</h2>
+                        <p class="text-base md:text-lg">Make it yours in minutes. Effortlessly tailor layouts, colors,
+                            and content to fit your brand — all without touching a single line of code.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="p-3 flex flex-col md:flex-row-reverse gap-6 items-center md:items-start bg-gradient-to-b from-zinc-100 via-slate-100 to-gray-100 rounded-2xl mb-5 w-full">
+                    <div
+                        class="p-1 flex flex-col items-center md:items-start w-full md:w-1/3 text-center md:text-left gap-4 px-24">
+                        <span class="items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-16 text-teal-500">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
+                        </span>
+                        <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-3">SEO Optimized</h3>
+                    </div>
+
+                    <div class="w-full md:w-2/3 text-center md:text-left text-gray-700 px-10 lg:mt-8">
+                        <h2 class="font-semibold gap-2 text-xl md:text-2xl mb-2 mt-5">SEO Friendly Structure</h2>
+                        <p class="text-base md:text-lg">Designed with industry-leading SEO best practices to boost your
+                            website's visibility and help you rank higher on search engines effortlessly
+                        </p>
+                    </div>
+
+
+                </div>
+                <div
+                    class="p-3 flex flex-col md:flex-row gap-6 items-center md:items-start bg-gradient-to-b from-zinc-100 via-slate-100 to-gray-100 rounded-2xl mb-5 w-full">
+                    <div
+                        class="p-1 flex flex-col items-center md:items-start w-full md:w-1/3 text-center md:text-left px-24">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-16">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
+                        </svg>
+
+                        <h3 class="text-2xl md:text-3xl font-semibold text-gray-800">Clean UI Design</h3>
+                    </div>
+                    <div class="w-full md:w-2/3 text-center md:text-left text-gray-700 px-10 lg:mt-5">
+                        <h2 class="font-semibold gap-2 text-xl md:text-2xl mb-2 mt-5">Modern & Clean UI</h2>
+                        <p class="text-base md:text-lg">Beautifully crafted pre-designed sections that create an
+                            engaging and seamless experience for your users. Clean aesthetics meet intuitive design for
+                            maximum impact
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="p-3 flex flex-col md:flex-row-reverse gap-6 items-center md:items-start bg-gradient-to-b from-zinc-100 via-slate-100 to-gray-100 rounded-2xl mb-5 w-full">
+                    <div
+                        class="p-1 flex flex-col items-center md:items-start w-full md:w-1/3 text-center md:text-left gap-4 px-24">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-16 ">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                        </svg>
+                        <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-3">24/7 Support</h3>
+                    </div>
+                    <div class="w-full md:w-2/3 text-center md:text-left text-gray-700 px-10 lg:mt-8">
+                        <h2 class="font-semibold gap-2 text-xl md:text-2xl mb-2 mt-5">Dedicated Support</h2>
+                        <p class="text-base md:text-lg">Need help? We’ve got your back — anytime, anywhere. Our team is
+                            available 24/7 to assist you with questions, technical issues, or anything else you need
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us -->
+    <section class="bg-rose-100 rounded-2xl px-8 py-1 mb-5">
+        <div class="container mx-auto">
+            <div class="mt-8 mx-8 text-center">
+                <h2 class="text-3xl md:text-5xl font-bold">Why Choose Us</h2>
+                <p class="text-xl md:text-2xl mt-2">“We don’t just build websites — we build experiences”
+                </p>
+            </div>
+            <div class="flex flex-wrap pb-5">
+                <div class="flex-wrap flex pd-16 md:pb-28 w-full md:w-1/2 lg:w-1/4 p-2">
+                    <div
+                        class="mt-12 text-white rounded-3xl bg-gradient-to-r from-pink-400 to-rose-400 text-center text-xl py-16 transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1">
+                        <p class="font-thin px-3">Clean, modern, and responsive design crafted to make your
+                            brand
+                            stand out</p>
+                        <h2
+                            class="bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent text-lg ml-1 mt-5">
+                            Quality Design</h2>
+                    </div>
+                </div>
+                <div class="flex-wrap flex pd-16 md:pb-28 w-full md:w-1/2 lg:w-1/4 p-2">
+                    <div
+                        class="mt-12 text-white rounded-3xl bg-gradient-to-t from-pink-400 to-rose-400 text-center text-xl py-16 transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1">
+                        <p class="font-thin px-3">User-friendly structure that allows you to easily modify and
+                            manage your website</p>
+                        <h2
+                            class="bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent text-lg ml-1 mt-5">
+                            Easy Customization</h2>
+                    </div>
+                </div>
+                <div class="flex-wrap flex pd-16 md:pb-28 w-full md:w-1/2 lg:w-1/4 p-2">
+                    <div
+                        class="mt-12 text-white rounded-3xl bg-gradient-to-b from-pink-400 to-rose-400 text-center text-xl py-16 transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1">
+                        <p class="font-thin px-3">Need a little extra guidance, our support team is ready to
+                            help every step of the way
+                        </p>
+                        <h2
+                            class="bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent text-lg ml-1 mt-5">
+                            Customer Support</h2>
+                    </div>
+                </div>
+                <div class="flex-wrap flex pd-16 md:pb-28 w-full md:w-1/2 lg:w-1/4 p-2 ">
+                    <div
+                        class="text-center text-xl py-16 mt-12 text-white rounded-3xl bg-gradient-to-l from-pink-400 to-rose-400 transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1">
+                        <p class="font-thin px-3">Our optimized code ensures lightning-fast load times and
+                            reliable
+                            performance</p>
+                        <h2
+                            class="bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent text-lg ml-1 mt-5">
+                            Fast & Reliable</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="bg-gradient-to-r from-teal-300 to-emerald-400 rounded-2xl px-8 py-10 mb-5">
+        <div class="container mx-auto">
+            <div class="py-1 md:py-16">
+                <h2 class="text-center text-3xl md:text-5xl font-bold">What Our Clients Say</h2>
+                <p class="text-center text-xl md:text-2xl mt-3">Trusted by businesses, loved by customers</p>
+            </div>
+            <div class="flex flex-wrap ">
+                <div
+                    class="bg-red-100 w-full lg:w-1/4 rounded-full flex flex-col items-center p-6 sm:p-10 lg:p-16 mx-auto ml-1 mt-4">
+                    <div class="mt-4 mb-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-16 text-gray-700">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                    </div>
+                    <div class="w-full max-w-sm mb-6">
+                        <p class="text-center text-lg sm:text-xl md:text-2xl font-light text-gray-800 leading-relaxed">
+                            Snapsite helped us turn our ideas into reality. The designs are modern, clean, and
+                            user-friendly.
+                            Totally recommend them!
+                        </p>
+                    </div>
+                    <div class="w-full max-w-sm">
+                        <h3 class="text-center font-semibold text-2xl sm:text-3xl">
+                            Sarah L.,<br>
+                            <span class="font-medium text-gray-600 text-lg sm:text-xl">Startup Founder</span>
+                        </h3>
+                    </div>
+
+                </div>
+                <div
+                    class="bg-orange-100 w-full lg:w-1/4 rounded-full flex flex-col items-center p-6 sm:p-10 lg:p-16 mx-auto ml-1 mt-4">
+                    <div class="mt-4 mb-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-16 text-gray-700">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                    </div>
+                    <div class="w-full max-w-sm mb-6">
+                        <p class="text-center text-lg sm:text-xl md:text-2xl font-light text-gray-800 leading-relaxed">
+                            Excellent service and fast delivery! The team was super supportive throughout the process
+                        </p>
+                    </div>
+                    <div class="w-full max-w-sm">
+                        <h3 class="text-center font-semibold text-2xl sm:text-3xl">
+                            Rohan M.,<br>
+                            <span class="font-medium text-gray-600 text-lg sm:text-xl">Digital Marketer</span>
+                        </h3>
+                    </div>
+                </div>
+                <div
+                    class="bg-lime-100 w-full lg:w-1/4 rounded-full flex flex-col items-center p-6 sm:p-10 lg:p-16 mx-auto ml-1 mt-4">
+                    <div class="mt-4 mb-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-16 text-gray-700">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                    </div>
+                    <div class="w-full max-w-sm mb-6">
+                        <p class="text-center text-lg sm:text-xl md:text-2xl font-light text-gray-800 leading-relaxed">
+                            Amazing experience! Very flexible and customizable. I got exactly what I needed for my
+                            website
+                        </p>
+                    </div>
+                    <div class="w-full max-w-sm">
+                        <h3 class="text-center font-semibold text-2xl sm:text-3xl">
+                            Aisha K.,<br>
+                            <span class="font-medium text-gray-600 text-lg sm:text-xl">Freelancer</span>
+                        </h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action -->
+    <section class="bg-violet-100 rounded-2xl p-4 md:p-8 lg:p-12 mb-5">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+
+                <div class="w-full md:w-1/2 py-8 md:py-16 px-4 text-gray-600">
+                    <h2 class="text-center font-bold text-gray-800 text-3xl md:text-5xl lg:text-6xl">
+                        Call To Action
+                    </h2>
+
+                    <p class="text-center font-semibold text-base md:text-xl mt-4">
+                        Let’s build something amazing together. Get in touch with us and take your brand to the next
+                        level
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-6">
+                        <a href="tel:+910000000000"
+                            class="bg-neutral-100 py-2 px-6 text-lg rounded-2xl w-full sm:w-auto text-center hover:bg-violet-200 transition">
+                            Call Us
+                        </a>
+                        <a href="mailto:Snapsite@email.com"
+                            class="bg-neutral-100 py-2 px-6 text-lg rounded-2xl w-full sm:w-auto text-center hover:bg-violet-200 transition">
+                            Email Us
+                        </a>
+                        <a href="/contact/contact.html"
+                            class="bg-neutral-100 py-2 px-6 text-lg rounded-2xl w-full sm:w-auto text-center hover:bg-violet-200 transition">
+                            Reach Us
+                        </a>
+                    </div>
+
+                    <ul class="flex flex-wrap justify-center mt-8">
+                        <li class="p-2 bg-white shadow rounded mx-1">
+                            <a href="#">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#1877F2"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82V14.706h-3.29v-3.62h3.29V8.413c0-3.258 1.985-5.033 4.886-5.033 1.388 0 2.582.103 2.93.149v3.4l-2.012.001c-1.577 0-1.882.75-1.882 1.85v2.423h3.763l-.49 3.62h-3.273V24h6.418c.73 0 1.326-.597 1.326-1.326V1.326C24 .597 23.403 0 22.675 0z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="p-2 bg-white shadow rounded mx-1">
+                            <a href="#">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#E1306C"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm4.75-.88a1.13 1.13 0 1 1 0 2.26 1.13 1.13 0 0 1 0-2.26z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="p-2 bg-white shadow rounded mx-1">
+                            <a href="#">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#0A66C2"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5h4V24h-4V8.5zM8.5 8.5h3.6v2.1h.05c.5-.95 1.75-2 3.6-2 3.85 0 4.55 2.55 4.55 5.85V24h-4v-7.7c0-1.85-.03-4.25-2.6-4.25-2.6 0-3 2-3 4.1V24h-4V8.5z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="p-2 bg-white shadow rounded mx-1">
+                            <a href="#">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#1DA1F2"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23.95 4.57a10 10 0 0 1-2.82.775 4.93 4.93 0 0 0 2.17-2.724 10.17 10.17 0 0 1-3.127 1.195 4.92 4.92 0 0 0-8.384 4.482A13.978 13.978 0 0 1 1.671 3.15 4.92 4.92 0 0 0 3.195 9.72 4.9 4.9 0 0 1 .964 9.1v.062a4.93 4.93 0 0 0 3.946 4.827 4.92 4.92 0 0 1-2.212.084 4.93 4.93 0 0 0 4.6 3.417A9.867 9.867 0 0 1 0 19.54 13.94 13.94 0 0 0 7.548 21.5c9.142 0 14.307-7.721 13.995-14.646A9.935 9.935 0 0 0 24 4.59l-.05-.02z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="p-2 bg-white shadow rounded mx-1">
+                            <a href="#">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#FF0000"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23.5 6.2a2.96 2.96 0 0 0-2.08-2.09C19.69 3.5 12 3.5 12 3.5s-7.69 0-9.42.59A2.96 2.96 0 0 0 .5 6.2C0 7.92 0 12 0 12s0 4.08.5 5.8a2.96 2.96 0 0 0 2.08 2.09c1.73.59 9.42.59 9.42.59s7.69 0 9.42-.59a2.96 2.96 0 0 0 2.08-2.09c.5-1.72.5-5.8.5-5.8s0-4.08-.5-5.8zM9.55 15.57V8.43L15.82 12l-6.27 3.57z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w-full md:w-1/2 py-1 px-4 md:px-10">
+                    <h3 class="text-center font-bold text-gray-800 text-2xl md:text-3xl">
+                        Get a Quote
+                    </h3>
+
+                    <form action="/submit-form" method="POST"
+                        class="mt-6 border p-5 rounded-lg bg-white focus:within:border-purple-500 ">
+
+                        <div class="mb-4">
+                            <label class="block text-gray-600 mb-2">Enter Your Name</label>
+                            <input type="text" placeholder="Your Name" required
+                                class="w-full px-4 py-2 border-b rounded-2xl focus:outline-none ">
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-gray-600 mb-2">Enter Your Mobile Number</label>
+                            <input type="number" placeholder="Your Mobile Number" required
+                                class="w-full px-4 py-2 border-b rounded-2xl focus:outline-none">
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-gray-600 mb-2">Enter Your Email-Id</label>
+                            <input type="email" placeholder="Your Email Address" required
+                                class="w-full px-4 py-2 border-b rounded-2xl focus:outline-none">
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-gray-600 mb-2">Message</label>
+                            <textarea placeholder="Your Message" required
+                                class="w-full px-4 py-2 border-b rounded-2xl focus:outline-none"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="bg-neutral-100 py-2 px-6 text-lg rounded-2xl w-full hover:bg-violet-200 transition">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-gray-700 p-5 rounded-2xl text-white">
+        <div class="flex flex-wrap">
+
+            <div class="lg:p-10 p-5 md:w-1/3 w-full flex flex-col justify-center items-center">
+                <div class="flex gap-4 items-center">
+                    <img src="/Assets/Icons/snapsite-logo.png" class="w-10 h-9 " alt="logo">
+                    <a class="font-bold text-white text-3xl pr-5  mr-5 " href="/index.html">Snapsite</a>
+
+                </div>
+                <div class="flex gap-4 justify-center items-center mt-5 md:mt-0">
+                    <a href="https://play.google.com/store/games?hl=en_IN">
+                        <img src="/Assets/Footer icons/google-play-svgrepo-com (1).svg" alt="play store"
+                            class="size-24 ">
+
+                    </a>
+                    <a href="https://www.apple.com/in/app-store/">
+                        <img src="/Assets/Footer icons/aivalable-on-the-app-store-2-logo-svgrepo-com (1).svg"
+                            alt="app store" class="size-24 h-">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="lg:p-10 p-5 md:w-1/3 w-full flex flex-col items-center justify-center">
+                <h2 class="font-bold text-3xl text-center">Address</h2>
+                <p class="text-center text-base"> Address 1 <br>
+                    Address 2 <br>
+                    Address 3 <br>
+                    pincode - 000000
+                </p>
+
+            </div>
+            <div class="lg:p-10 p-5 md:w-1/3 w-full flex flex-col items-center justify-center">
+                <h2 class="font-bold text-3xl">Enquries</h2>
+                <p class="text-gray-400 mt-3">
+                    <a href="tel:+91000000000" class="ml-5">000-000-0000</a><br>
+                    <a href="mailto:contact@email.com">contact@email.com</a>
+
+                </p>
+                <ul class="flex  mt-4">
+                    <li class="p-2 bg-white shadow rounded mx-1 hover:scale-110 transition duration-300">
+                        <a href="https://www.facebook.com/">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#1877F2" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82V14.706h-3.29v-3.62h3.29V8.413c0-3.258 1.985-5.033 4.886-5.033 1.388 0 2.582.103 2.93.149v3.4l-2.012.001c-1.577 0-1.882.75-1.882 1.85v2.423h3.763l-.49 3.62h-3.273V24h6.418c.73 0 1.326-.597 1.326-1.326V1.326C24 .597 23.403 0 22.675 0z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="p-2 bg-white shadow rounded mx-1 hover:scale-110 transition duration-300">
+                        <a href="https://www.instagram.com/">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#E1306C" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm4.75-.88a1.13 1.13 0 1 1 0 2.26 1.13 1.13 0 0 1 0-2.26z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="p-2 bg-white shadow rounded mx-1 hover:scale-110 transition duration-300">
+                        <a href="https://www.linkedin.com/">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#0A66C2" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5h4V24h-4V8.5zM8.5 8.5h3.6v2.1h.05c.5-.95 1.75-2 3.6-2 3.85 0 4.55 2.55 4.55 5.85V24h-4v-7.7c0-1.85-.03-4.25-2.6-4.25-2.6 0-3 2-3 4.1V24h-4V8.5z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="p-2 bg-white shadow rounded mx-1 hover:scale-110 transition duration-300">
+                        <a href="https://www.twitter.com/">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#1DA1F2" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.95 4.57a10 10 0 0 1-2.82.775 4.93 4.93 0 0 0 2.17-2.724 10.17 10.17 0 0 1-3.127 1.195 4.92 4.92 0 0 0-8.384 4.482A13.978 13.978 0 0 1 1.671 3.15 4.92 4.92 0 0 0 3.195 9.72 4.9 4.9 0 0 1 .964 9.1v.062a4.93 4.93 0 0 0 3.946 4.827 4.92 4.92 0 0 1-2.212.084 4.93 4.93 0 0 0 4.6 3.417A9.867 9.867 0 0 1 0 19.54 13.94 13.94 0 0 0 7.548 21.5c9.142 0 14.307-7.721 13.995-14.646A9.935 9.935 0 0 0 24 4.59l-.05-.02z" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="p-2 bg-white shadow rounded mx-1 hover:scale-110 transition duration-300">
+                        <a href="https://www.youtube.com/">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#FF0000" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.5 6.2a2.96 2.96 0 0 0-2.08-2.09C19.69 3.5 12 3.5 12 3.5s-7.69 0-9.42.59A2.96 2.96 0 0 0 .5 6.2C0 7.92 0 12 0 12s0 4.08.5 5.8a2.96 2.96 0 0 0 2.08 2.09c1.73.59 9.42.59 9.42.59s7.69 0 9.42-.59a2.96 2.96 0 0 0 2.08-2.09c.5-1.72.5-5.8.5-5.8s0-4.08-.5-5.8zM9.55 15.57V8.43L15.82 12l-6.27 3.57z" />
+                            </svg>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <section id="copy" class="text-center font-medium mt-3"> 
+    </section>
+</body>
+<script src="/script.js"></script>
+</html>

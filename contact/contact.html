@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="/Assets/Icons/contact.png">
+    
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="p-5 md:p-10 text-gray-800 mb-10 select-none touch-pan-y">
+    <!-- Header -->
+    <section class="p-5 mb-5">
+        <div class="container mx-auto">
+            <div
+                class="flex flex-wrap justify-between items-center bg-gradient-to-b from-orange-100 via-orange-200 to-orange-100 py-5 px-5 rounded-lg">
+                <div class="flex items-center">
+                    <img src="/Assets/Icons/snapsite-logo.png" class="w-10 h-9" alt="logo">
+                    <a class="font-bold text-gray-700 text-3xl pr-5 border-r border-purple-300 mr-5 ml-1"
+                        href="/index.html">Snapsite</a>
+                </div>
+                <div class="my-auto">
+                    <button class="md:hidden" onclick="menuclick()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                        </svg>
+                    </button>
+                    <ul class="hidden md:flex font-bold text-gray-700">
+                        <li class="pr-5"><a class=" px-3 py-2 hover:border-purple-300 rounded"
+                                href="/index.html">Home</a></li>
+                        <li class="pr-5"><a class=" px-3 py-2 hover:border-purple-300 rounded"
+                                href="/about/about.html">About</a>
+                        </li>
+                        <li class="pr-5"><a class=" px-3 py-2 hover:border-purple-300 rounded"
+                                href="/services/services.html">services</a></li>
+                        <li class="pr-5"><a class=" px-3 py-2 hover:border-purple-300 rounded"
+                                href="/contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <a href="/quote/quote.html"
+                    class="text-medium bg-red-500 text-white px-3 py-2 rounded font-bold ml-auto flex animate-bounce">
+                    <span class="pr-1 hidden lg:block">
+                        Get a Quote
+                    </span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 3.75H6.912a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859M12 3v8.25m0 0-3-3m3 3 3-3" />
+                    </svg>
+                </a>
+                <div class="hidden transion-all duration-300 ease-in-out px-5 justify-center py-5" id="mobilemenu">
+                    <ul class=" font-bold text-gray-600  md:hidden">
+                        <li class="mt-1"><a class=" px-3" href="/index.html">Home</a></li>
+                        <li class="mt-1"><a class=" px-3" href="/about/about.html">About</a></li>
+                        <li class="mt-1"><a class=" px-3" href="/services/services.html">services</a></li>
+                        <li class="mt-1"><a class=" px-3" href="/contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- contact -->
+    <section class="bg-gradient-to-r from-blue-200 to-cyan-300 rounded-2xl p-5 mb-5">
+        <div class="container mx-auto">
+            <div class="mt-8 mx-auto max-w-3xl">
+                <h2 class="text-center text-3xl md:text-5xl font-bold">Get in Touch</h2>
+                <p class="text-center text-xl md:text-2xl mt-2">Feel free to reach out for collaborations
+                </p>
+                <p class="text-center mt-3 text-sm md:text-base">Please send us all your queries and we will get back to you within 24 hours
+                </p>
+
+                <form action="/submit-form" method="POST"
+                    class="mt-6 border p-5 rounded-lg bg-white focus:within:border-purple-500 space-y-4">
+
+                    <div>
+                        <label class="block text-gray-600 mb-1 text-sm md:text-base">Enter Your Name</label>
+                        <input type="text" placeholder="Your Name" required
+                            class="w-full px-4 py-2 border-b rounded-2xl focus:outline-none ">
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-600 mb-1 text-sm md:text-base">Enter Your Mobile Number</label>
+                        <input type="number" placeholder="Your Mobile Number" required
+                            class="w-full px-4 py-2 border-b rounded-2xl focus:outline-none">
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-600 mb-1 text-sm md:text-base">Enter Your Email-Id</label>
+                        <input type="email" placeholder="Your Email Address" required
+                            class="w-full px-4 py-2 border-b rounded-2xl focus:outline-none">
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-600 mb-1 text-sm md:text-base">Message</label>
+                        <textarea placeholder="Your Message" required
+                            class="w-full px-4 py-2 border-b rounded-2xl focus:outline-none"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="bg-red-100 py-3 px-6 text-lg rounded-2xl w-full hover:bg-violet-300 transition hover:scale-105 transition duration-100">
+                        Submit
+                    </button>
+                </form>
+            </div>
+            <div class="w-full flex flex-col md:flex-row gap-5 justify-center items-center mt-10">
+                <div class="flex flex-wrap justify-center gap-3">
+                    <ul class="flex  mt-4">
+                        <li class="p-2 bg-white shadow rounded mx-1 hover:scale-110 transition duration-300">
+                            <a href="https://www.facebook.com/">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#1877F2"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82V14.706h-3.29v-3.62h3.29V8.413c0-3.258 1.985-5.033 4.886-5.033 1.388 0 2.582.103 2.93.149v3.4l-2.012.001c-1.577 0-1.882.75-1.882 1.85v2.423h3.763l-.49 3.62h-3.273V24h6.418c.73 0 1.326-.597 1.326-1.326V1.326C24 .597 23.403 0 22.675 0z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="p-2 bg-white shadow rounded mx-1 hover:scale-110 transition duration-300">
+                            <a href="https://www.instagram.com/">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#E1306C"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm4.75-.88a1.13 1.13 0 1 1 0 2.26 1.13 1.13 0 0 1 0-2.26z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="p-2 bg-white shadow rounded mx-1 hover:scale-110 transition duration-300">
+                            <a href="https://www.linkedin.com/">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#0A66C2"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5h4V24h-4V8.5zM8.5 8.5h3.6v2.1h.05c.5-.95 1.75-2 3.6-2 3.85 0 4.55 2.55 4.55 5.85V24h-4v-7.7c0-1.85-.03-4.25-2.6-4.25-2.6 0-3 2-3 4.1V24h-4V8.5z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="p-2 bg-white shadow rounded mx-1 hover:scale-110 transition duration-300">
+                            <a href="https://www.twitter.com/">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#1DA1F2"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23.95 4.57a10 10 0 0 1-2.82.775 4.93 4.93 0 0 0 2.17-2.724 10.17 10.17 0 0 1-3.127 1.195 4.92 4.92 0 0 0-8.384 4.482A13.978 13.978 0 0 1 1.671 3.15 4.92 4.92 0 0 0 3.195 9.72 4.9 4.9 0 0 1 .964 9.1v.062a4.93 4.93 0 0 0 3.946 4.827 4.92 4.92 0 0 1-2.212.084 4.93 4.93 0 0 0 4.6 3.417A9.867 9.867 0 0 1 0 19.54 13.94 13.94 0 0 0 7.548 21.5c9.142 0 14.307-7.721 13.995-14.646A9.935 9.935 0 0 0 24 4.59l-.05-.02z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="p-2 bg-white shadow rounded mx-1 hover:scale-110 transition duration-300">
+                            <a href="https://www.google.co.in/maps">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 48 48">
+                                    <path fill="#48b564"
+                                        d="M35.76,26.36h0.01c0,0-3.77,5.53-6.94,9.64c-2.74,3.55-3.54,6.59-3.77,8.06	C24.97,44.6,24.53,45,24,45s-0.97-0.4-1.06-0.94c-0.23-1.47-1.03-4.51-3.77-8.06c-0.42-0.55-0.85-1.12-1.28-1.7L28.24,22l8.33-9.88	C37.49,14.05,38,16.21,38,18.5C38,21.4,37.17,24.09,35.76,26.36z">
+                                    </path>
+                                    <path fill="#fcc60e"
+                                        d="M28.24,22L17.89,34.3c-2.82-3.78-5.66-7.94-5.66-7.94h0.01c-0.3-0.48-0.57-0.97-0.8-1.48L19.76,15	c-0.79,0.95-1.26,2.17-1.26,3.5c0,3.04,2.46,5.5,5.5,5.5C25.71,24,27.24,23.22,28.24,22z">
+                                    </path>
+                                    <path fill="#2c85eb"
+                                        d="M28.4,4.74l-8.57,10.18L13.27,9.2C15.83,6.02,19.69,4,24,4C25.54,4,27.02,4.26,28.4,4.74z">
+                                    </path>
+                                    <path fill="#ed5748"
+                                        d="M19.83,14.92L19.76,15l-8.32,9.88C10.52,22.95,10,20.79,10,18.5c0-3.54,1.23-6.79,3.27-9.3	L19.83,14.92z">
+                                    </path>
+                                    <path fill="#5695f6"
+                                        d="M28.24,22c0.79-0.95,1.26-2.17,1.26-3.5c0-3.04-2.46-5.5-5.5-5.5c-1.71,0-3.24,0.78-4.24,2L28.4,4.74	c3.59,1.22,6.53,3.91,8.17,7.38L28.24,22z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="p-2 bg-white shadow rounded mx-1 hover:scale-110 transition duration-300">
+                            <a href="https://www.youtube.com/">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#FF0000"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23.5 6.2a2.96 2.96 0 0 0-2.08-2.09C19.69 3.5 12 3.5 12 3.5s-7.69 0-9.42.59A2.96 2.96 0 0 0 .5 6.2C0 7.92 0 12 0 12s0 4.08.5 5.8a2.96 2.96 0 0 0 2.08 2.09c1.73.59 9.42.59 9.42.59s7.69 0 9.42-.59a2.96 2.96 0 0 0 2.08-2.09c.5-1.72.5-5.8.5-5.8s0-4.08-.5-5.8zM9.55 15.57V8.43L15.82 12l-6.27 3.57z" />
+                                </svg>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="md:w-1/2 w-full flex flex-col md:flex-row-reverse gap-5 items-center md:ml-32 mt-10 ">
+                    <div class="text-center items-center flex flex-col">
+                        <a href="mailto:Snapsite@email.com" aria-label="Send Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-16 text-blue-500 hover:scale-110 transition duration-300">
+                                <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                                <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+                              </svg>
+                        </a>
+                        <p class="text-lg font-medium m-1">Email</p>
+                        <h2 class="text-xl font-light">
+                            <a href="mailto:Snapsite@email.com" aria-label="Send Email">Snapsite@email.com</a>
+                        </h2>
+                    </div>
+                    <div class="text-center items-center flex flex-col">
+                        <a href="tel:+91000000000">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-16 text-blue-500 hover:scale-110 transition duration-300">
+                                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                              </svg>
+                        </a>
+                        <p class="text-lg font-medium m-1">Phone</p>
+                        <h2 class="text-xl font-light">
+                            <a href="tel:+91000000000">000-000-0000</a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-gray-700 p-5 rounded-2xl text-white">
+        <div class="flex flex-wrap">
+
+            <div class="lg:p-10 p-5 md:w-1/3 w-full flex flex-col justify-center items-center">
+                <div class="flex gap-4 items-center">
+                    <img src="/Assets/Icons/snapsite-logo.png" class="w-10 h-9 " alt="logo">
+                    <a class="font-bold text-white text-3xl pr-5  mr-5 " href="/index.html">Snapsite</a>
+
+                </div>
+                <div class="flex gap-4 justify-center items-center mt-5 md:mt-0">
+                    <a href="https://play.google.com/store/games?hl=en_IN">
+                        <img src="/Assets/Footer icons/google-play-svgrepo-com (1).svg" alt="play store"
+                            class="size-24 ">
+
+                    </a>
+                    <a href="https://www.apple.com/in/app-store/">
+                        <img src="/Assets/Footer icons/aivalable-on-the-app-store-2-logo-svgrepo-com (1).svg"
+                            alt="app store" class="size-24 h-">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="lg:p-10 p-5 md:w-1/3 w-full flex flex-col items-center justify-center">
+                <h2 class="font-bold text-3xl text-center">Address</h2>
+                <p class="text-center text-base"> Address 1 <br>
+                    Address 2 <br>
+                    Address 3 <br>
+                    pincode - 000000
+                </p>
+
+            </div>
+            <div class="lg:p-10 p-5 md:w-1/3 w-full flex flex-col items-center justify-center">
+                <h2 class="font-bold text-3xl">Enquries</h2>
+                <p class="text-gray-400 mt-3">
+                    <a href="tel:+91000000000" class="ml-5">000-000-0000</a><br>
+                    <a href="mailto:contact@email.com">contact@email.com</a>
+
+                </p>
+                <ul class="flex  mt-4">
+                    <li class="p-2 bg-white shadow rounded mx-1 hover:scale-110 transition duration-300">
+                        <a href="https://www.facebook.com/">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#1877F2" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82V14.706h-3.29v-3.62h3.29V8.413c0-3.258 1.985-5.033 4.886-5.033 1.388 0 2.582.103 2.93.149v3.4l-2.012.001c-1.577 0-1.882.75-1.882 1.85v2.423h3.763l-.49 3.62h-3.273V24h6.418c.73 0 1.326-.597 1.326-1.326V1.326C24 .597 23.403 0 22.675 0z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="p-2 bg-white shadow rounded mx-1 hover:scale-110 transition duration-300">
+                        <a href="https://www.instagram.com/">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#E1306C" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm4.75-.88a1.13 1.13 0 1 1 0 2.26 1.13 1.13 0 0 1 0-2.26z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="p-2 bg-white shadow rounded mx-1 hover:scale-110 transition duration-300">
+                        <a href="https://www.linkedin.com/">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#0A66C2" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5h4V24h-4V8.5zM8.5 8.5h3.6v2.1h.05c.5-.95 1.75-2 3.6-2 3.85 0 4.55 2.55 4.55 5.85V24h-4v-7.7c0-1.85-.03-4.25-2.6-4.25-2.6 0-3 2-3 4.1V24h-4V8.5z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="p-2 bg-white shadow rounded mx-1 hover:scale-110 transition duration-300">
+                        <a href="https://www.twitter.com/">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#1DA1F2" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.95 4.57a10 10 0 0 1-2.82.775 4.93 4.93 0 0 0 2.17-2.724 10.17 10.17 0 0 1-3.127 1.195 4.92 4.92 0 0 0-8.384 4.482A13.978 13.978 0 0 1 1.671 3.15 4.92 4.92 0 0 0 3.195 9.72 4.9 4.9 0 0 1 .964 9.1v.062a4.93 4.93 0 0 0 3.946 4.827 4.92 4.92 0 0 1-2.212.084 4.93 4.93 0 0 0 4.6 3.417A9.867 9.867 0 0 1 0 19.54 13.94 13.94 0 0 0 7.548 21.5c9.142 0 14.307-7.721 13.995-14.646A9.935 9.935 0 0 0 24 4.59l-.05-.02z" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="p-2 bg-white shadow rounded mx-1 hover:scale-110 transition duration-300">
+                        <a href="https://www.youtube.com/">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#FF0000" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.5 6.2a2.96 2.96 0 0 0-2.08-2.09C19.69 3.5 12 3.5 12 3.5s-7.69 0-9.42.59A2.96 2.96 0 0 0 .5 6.2C0 7.92 0 12 0 12s0 4.08.5 5.8a2.96 2.96 0 0 0 2.08 2.09c1.73.59 9.42.59 9.42.59s7.69 0 9.42-.59a2.96 2.96 0 0 0 2.08-2.09c.5-1.72.5-5.8.5-5.8s0-4.08-.5-5.8zM9.55 15.57V8.43L15.82 12l-6.27 3.57z" />
+                            </svg>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--  -->
+    <section id="copy" class="text-center font-medium mt-3"> 
+    </section>
+    
+</body>
+<script src="/script.js"></script>
+
+</html>
